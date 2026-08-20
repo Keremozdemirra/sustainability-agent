@@ -52,9 +52,9 @@ asked. The description was written for the wrong phrasing. Say what you asked
 and what you expected, and it gets fixed — that feedback is more valuable than
 working around it.
 
-**What is actually built** is the Done section of [BACKLOG.md](BACKLOG.md).
-Everything under Queue is planned and does not exist yet. The daily loop builds
-one item a day; the table above is the intended shape, not the current state.
+**What is actually built** is listed under Contents below and in the Done
+section of [BACKLOG.md](BACKLOG.md). Everything under Queue is planned and does
+not exist yet.
 
 ## Layout
 
@@ -73,23 +73,14 @@ examples/
 
 See [BACKLOG.md](BACKLOG.md). The first unchecked item is the one being built.
 
-## Planned contents
+## Contents
 
-Nothing here is built yet. This table is the intended shape, and the daily loop
-fills it in one item at a time.
+| Skill | What it does |
+| --- | --- |
+| [double-materiality-assessment](skills/double-materiality-assessment) | Run the assessment as data: scored, weighted, threshold-tested and auditable. |
 
-| # | Skill | What it does |
-| --- | --- | --- |
-| 001 | [double-materiality-assessment](skills/double-materiality-assessment) | Run the assessment as data rather than a workshop artefact: impact and financial scores per topic, stakeholder weighting, threshold sensitivity, and a trail of who scored what and when. |
-| 002 | [csrd-readiness-gap](skills/csrd-readiness-gap) | Check what a company can currently report against what its disclosure obligation requires, and rank the gaps by how long each takes to close rather than by how large it is. |
-| 003 | [decarbonisation-roadmap](skills/decarbonisation-roadmap) | Turn a target into a sequence of measures with cost, abatement and dependency, and say plainly which part of the target has no measure behind it yet. |
-| 004 | [disclosure-review](skills/disclosure-review) | Read a published sustainability report the way a sceptical reader would: restated figures, dropped metrics, quietly moved baselines, claims with no method behind them. |
-| 005 | [supplier-data-request](skills/supplier-data-request) | Design the data request that gets usable answers from suppliers who have never been asked before, and validate what comes back. |
-| 006 | [greenwash-check](skills/greenwash-check) | Test a claim against what can actually be evidenced, using the tests a regulator applies rather than the ones a marketing team applies. |
-| 007 | [factor-vintage-audit](skills/factor-vintage-audit) | Find every emission factor, threshold and rate in a deliverable and check each against its current published value, reporting what has been superseded. |
-| 008 | [target-setting-brief](skills/target-setting-brief) | What a credible target commits an organisation to, what the standard actually requires, and what the common shortcuts cost in credibility. |
-| 009 | [transition-risk-narrative](skills/transition-risk-narrative) | Write the financial narrative of transition risk in the language of the finance function rather than the sustainability team. |
-
+Everything still under Queue in [BACKLOG.md](BACKLOG.md) does not exist
+yet. The daily loop builds one item a day.
 ## Licence
 
 MIT. See [LICENSE](LICENSE).

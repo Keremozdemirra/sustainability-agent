@@ -22,11 +22,10 @@ Rules of thumb applied to every item:
 
 ## Done
 
-Nothing yet.
+- [x] **001 — double-materiality-assessment** · shipped 2026-08-20.
 
 ## Queue
 
-- [ ] **001 — double-materiality-assessment** · Run the assessment as data rather than a workshop artefact: impact and financial scores per topic, stakeholder weighting, threshold sensitivity, and a trail of who scored what and when.
 - [ ] **002 — csrd-readiness-gap** · Check what a company can currently report against what its disclosure obligation requires, and rank the gaps by how long each takes to close rather than by how large it is.
 - [ ] **003 — decarbonisation-roadmap** · Turn a target into a sequence of measures with cost, abatement and dependency, and say plainly which part of the target has no measure behind it yet.
 - [ ] **004 — disclosure-review** · Read a published sustainability report the way a sceptical reader would: restated figures, dropped metrics, quietly moved baselines, claims with no method behind them.
