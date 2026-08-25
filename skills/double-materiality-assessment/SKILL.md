@@ -214,6 +214,19 @@ person to check, not a compliance conclusion.
   entry and exit); the plateau and the chosen threshold with its reason; boundary topics;
   weighted versus unweighted; the judgement-only proportion; and the step 12 cross-checks.
 
+## Worked example
+
+A full run on a fictional but realistically specified company is committed under
+`examples/double-materiality-assessment/`:
+
+- `brief.md` — the input as received.
+- `scores.csv` — the scoring sheet, one row per topic, with the audit trail.
+- `assessment.md` — the finished assessment, including the threshold plateau and
+  the boundary topics that were argued rather than computed.
+
+Read it before the first run. The example is fictional and says so in its first
+paragraph; it is there for the shape of the output, not for its figures.
+
 ## Sources
 
 - The legal instruments and their vintages are listed under *Regulatory basis and vintage*
