@@ -13,8 +13,10 @@ in view. Every regulatory input carries its source and its date, every claim
 about a requirement is checked against the current text rather than remembered,
 and the deliverables are built so a later reader can tell which parts have aged.
 
-The calculation engines live in `esg-toolkit` and `cbam-calc`, which are separate
-repositories and not part of this one. This repository is the advisory layer.
+The calculation engines live in
+[esg-toolkit](https://github.com/Keremozdemirra/esg-toolkit), a separate
+repository and not part of this one; its CBAM embedded-emissions calculator,
+formerly the archived `cbam-calc`, is now `projects/004-embedded-emissions` there. This repository is the advisory layer.
 
 ## What this is not
 
@@ -25,23 +27,34 @@ It does not track regulatory releases automatically, and nothing here should be
 trusted to be current without checking. That is stated in every deliverable it
 produces, not just here.
 
-It does not implement emissions mathematics — `esg-toolkit` and `cbam-calc` do.
+It does not implement emissions mathematics — [esg-toolkit](https://github.com/Keremozdemirra/esg-toolkit) does.
 
 ## How to use this
 
 These are skills for Claude, not a command-line tool. There is nothing to
-install and nothing to import — you describe the work and the matching skill
+build and nothing to import — you describe the work and the matching skill
 fires on its own.
 
-**In Claude Code or Cowork**, once the skills are on your machine:
+**In Claude Code**, clone the repository and link its skills into the
+folders Claude Code reads (`~/.claude/skills/`):
 
 ```bash
-bash ~/Desktop/agent/_setup/sync-skills.sh
+git clone https://github.com/Keremozdemirra/sustainability-agent ~/agent-packs/sustainability-agent
+cd ~/agent-packs/sustainability-agent
+mkdir -p ~/.claude/skills
+for s in skills/*; do ln -sfn "$PWD/$s" ~/.claude/skills/; done
 ```
 
-That clones every agent repository and links its `skills/` into `~/.claude/skills`,
-so they are available in every session and every folder. Re-run it whenever one of
-these repositories ships something new — it pulls rather than re-clones.
+The links point back into the clone, so `git pull` there brings in whatever
+ships next. To copy the files instead of linking them, replace the
+line starting with `for` with:
+
+```bash
+cp -R skills/* ~/.claude/skills/
+```
+
+Skills placed there are available in every session and every folder; start a
+new session after installing.
 
 Then simply ask. Each skill's `description` frontmatter is written to match how
 the request actually gets phrased, in English or Turkish, so you do not name the
