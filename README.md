@@ -6,7 +6,7 @@ Sustainability advice has a specific hazard: the rules change, the
 figures get restated, and a deliverable written six months ago can be confidently
 wrong in a way that is hard to spot. A carbon factor without a vintage, a
 threshold from a superseded implementing act, a framework requirement that was
-dropped in the final text — each one looks exactly like a correct answer.
+dropped in the final text. Each one looks exactly like a correct answer.
 
 This repository holds the agents and skills for doing the work with that hazard
 in view. Every regulatory input carries its source and its date, every claim
@@ -27,12 +27,12 @@ It does not track regulatory releases automatically, and nothing here should be
 trusted to be current without checking. That is stated in every deliverable it
 produces, not just here.
 
-It does not implement emissions mathematics — [esg-toolkit](https://github.com/Keremozdemirra/esg-toolkit) does.
+The emissions mathematics lives in [esg-toolkit](https://github.com/Keremozdemirra/esg-toolkit).
 
 ## How to use this
 
-These are skills for Claude, not a command-line tool. There is nothing to
-build and nothing to import — you describe the work and the matching skill
+These are skills for Claude. There is nothing to
+build and nothing to import: you describe the work and the matching skill
 fires on its own.
 
 **In Claude Code**, clone the repository and link its skills into the
@@ -62,7 +62,7 @@ skill and generally should not have to think about which one applies.
 
 **If nothing fires**, that is a defect in the skill rather than in how you
 asked. The description was written for the wrong phrasing. Say what you asked
-and what you expected, and it gets fixed — that feedback is more valuable than
+and what you expected, and it gets fixed. That feedback is more valuable than
 working around it.
 
 **What is actually built** is listed under Contents below and in the Done
